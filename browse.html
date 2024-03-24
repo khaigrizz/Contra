@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Acme:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Acme:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Acme:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Acme:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Acme:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Acme:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Acme:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./browse.css" rel="stylesheet" />
+
+      <div class="browse-container">
+        <div class="browse-browse">
+          <img
+            alt="image911158"
+            src="public/external/image911158-s5vc-300h.png"
+            class="browse-image91"
+          />
+          <img
+            alt="Rectangle54841154"
+            src="public/external/rectangle54841154-3gfe.svg"
+            class="browse-rectangle5484"
+          />
+          <img
+            alt="Ellipse861154"
+            src="public/external/ellipse861154-d8w4-300h.png"
+            class="browse-ellipse86"
+          />
+          <img
+            alt="MemojiBoys3151154"
+            src="public/external/memojiboys3151154-2tn2-300w.png"
+            class="browse-memoji-boys315"
+          />
+          <img
+            alt="Rectangle54851154"
+            src="public/external/rectangle54851154-xuzu.svg"
+            class="browse-rectangle5485"
+          />
+          <div class="browse-frame33824">
+            <span class="browse-text"><span>VENDOR</span></span>
+          </div>
+          <span class="browse-text02"><span>LISA MAAHAD</span></span>
+          <span class="browse-text04"><span>CROCHETER, FULL-TIME</span></span>
+          <img
+            alt="Rectangle54861154"
+            src="public/external/rectangle54861154-djll.svg"
+            class="browse-rectangle5486"
+          />
+          <img
+            alt="Ellipse871154"
+            src="public/external/ellipse871154-znnm-300h.png"
+            class="browse-ellipse87"
+          />
+          <img
+            alt="Rectangle54871154"
+            src="public/external/rectangle54871154-lqs8i.svg"
+            class="browse-rectangle5487"
+          />
+          <div class="browse-frame33825">
+            <span class="browse-text06"><span>VENDOR</span></span>
+          </div>
+          <span class="browse-text08"><span>RAGHU SIMON</span></span>
+          <img
+            alt="IMAGE58121154"
+            src="public/external/image58121154-68r-300w.png"
+            class="browse-image5812"
+          />
+          <div class="browse-group33759">
+            <div class="browse-group">
+              <img
+                alt="Oval1154"
+                src="public/external/oval1154-n1jm-200h.png"
+                class="browse-oval"
+              />
+              <img
+                alt="OvalCopy1154"
+                src="public/external/ovalcopy1154-woq-200h.png"
+                class="browse-oval-copy"
+              />
+              <img
+                alt="OvalCopy41154"
+                src="public/external/ovalcopy41154-srfa-200h.png"
+              />
+            </div>
+            <span class="browse-text10"><span>+110 CLIENTS</span></span>
+          </div>
+          <div class="browse-group33760">
+            <div>
+              <img
+                alt="Oval1154"
+                src="public/external/oval1154-7kz-200h.png"
+                class="browse-oval1"
+              />
+              <img
+                alt="OvalCopy1154"
+                src="public/external/ovalcopy1154-qzd-200h.png"
+                class="browse-oval-copy1"
+              />
+              <img
+                alt="OvalCopy41154"
+                src="public/external/ovalcopy41154-sbss-200h.png"
+                class="browse-oval-copy41"
+              />
+            </div>
+            <span class="browse-text12"><span>+110 CLIENTS</span></span>
+          </div>
+          <div class="browse-group33761">
+            <img
+              alt="Vector11154"
+              src="public/external/vector11154-4w4o.svg"
+              class="browse-vector1"
+            />
+            <img
+              alt="Vector51154"
+              src="public/external/vector51154-8grk.svg"
+              class="browse-vector5"
+            />
+            <img
+              alt="Vector41154"
+              src="public/external/vector41154-prt8.svg"
+              class="browse-vector4"
+            />
+            <img
+              alt="Vector31154"
+              src="public/external/vector31154-m4uv.svg"
+              class="browse-vector3"
+            />
+            <img
+              alt="Vector21154"
+              src="public/external/vector21154-l58k.svg"
+              class="browse-vector2"
+            />
+          </div>
+          <div class="browse-group33762">
+            <img
+              alt="Vector11154"
+              src="public/external/vector11154-ar8r.svg"
+              class="browse-vector11"
+            />
+            <img
+              alt="Vector51154"
+              src="public/external/vector51154-nhyo.svg"
+              class="browse-vector51"
+            />
+            <img
+              alt="Vector41154"
+              src="public/external/vector41154-66q.svg"
+              class="browse-vector41"
+            />
+            <img
+              alt="Vector31154"
+              src="public/external/vector31154-6v5k.svg"
+              class="browse-vector31"
+            />
+            <img
+              alt="Vector21154"
+              src="public/external/vector21154-jrg.svg"
+              class="browse-vector21"
+            />
+          </div>
+          <span class="browse-text14">
+            <span>PHOTOGRAPHER, FULL-TIME</span>
+          </span>
+          <div class="browse-menu">
+            <div class="browse-menu-items">
+              <a href="index.html" class="browse-navlink">
+                <div class="browse-icons">
+                  <div class="browse-group1">
+                    <img
+                      alt="Ellipse1I115"
+                      src="public/external/ellipse1i115-wmas-200h.png"
+                      class="browse-ellipse1"
+                    />
+                    <img
+                      alt="UserInterfaceHouseI115"
+                      src="public/external/userinterfacehousei115-fcca.svg"
+                      class="browse-user-interface-house"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="browse-menu-items1">
+              <div class="browse-icons1">
+                <div class="browse-group11">
+                  <img
+                    alt="Ellipse1I115"
+                    src="public/external/ellipse1i115-vblf.svg"
+                    class="browse-ellipse11"
+                  />
+                  <img
+                    alt="UserInterfaceMagnifierI115"
+                    src="public/external/userinterfacemagnifieri115-tdsl.svg"
+                    class="browse-user-interface-magnifier"
+                  />
+                </div>
+              </div>
+              <span class="browse-text16"><span>Browse</span></span>
+            </div>
+            <div class="browse-menu-items2">
+              <div class="browse-icons2">
+                <div class="browse-group12">
+                  <img
+                    alt="Ellipse1I115"
+                    src="public/external/ellipse1i115-b2yc-200h.png"
+                    class="browse-ellipse12"
+                  />
+                  <img
+                    alt="UserInterfaceBellI115"
+                    src="public/external/userinterfacebelli115-0itm.svg"
+                    class="browse-user-interface-bell"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="browse-menu-items3">
+              <div class="browse-icons3">
+                <div class="browse-group13">
+                  <img
+                    alt="Ellipse1I115"
+                    src="public/external/ellipse1i115-532h-200h.png"
+                    class="browse-ellipse13"
+                  />
+                  <img
+                    alt="UsersaccountI115"
+                    src="public/external/usersaccounti115-g2kq.svg"
+                    class="browse-usersaccount"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="browse-frame33826">
+            <div class="browse-icons4">
+              <div class="browse-group14">
+                <img
+                  alt="Ellipse1I115"
+                  src="public/external/ellipse1i115-8hg.svg"
+                  class="browse-ellipse14"
+                />
+                <img
+                  alt="UserInterfaceMagnifierI115"
+                  src="public/external/userinterfacemagnifieri115-k8hj.svg"
+                  class="browse-user-interface-magnifier1"
+                />
+              </div>
+            </div>
+            <span class="browse-text18"><span>Search florist</span></span>
+          </div>
+          <div class="browse-category">
+            <div class="browse-frame33827">
+              <img
+                alt="Timeclock1155"
+                src="public/external/timeclock1155-5mcp.svg"
+                class="browse-timeclock"
+              />
+              <span class="browse-text20"><span>Central Market</span></span>
+            </div>
+            <div class="browse-frame33828">
+              <img
+                alt="Timeclock1155"
+                src="public/external/timeclock1155-j5bp.svg"
+                class="browse-timeclock1"
+              />
+              <span class="browse-text22"><span>Bandar Puncak Alam</span></span>
+            </div>
+            <div class="browse-frame33829">
+              <img
+                alt="Arrowsgrowth1156"
+                src="public/external/arrowsgrowth1156-rebn.svg"
+                class="browse-arrowsgrowth"
+              />
+              <span class="browse-text24"><span>Food Festival</span></span>
+            </div>
+            <div class="browse-frame33831">
+              <img
+                alt="Arrowsgrowth1156"
+                src="public/external/arrowsgrowth1156-ngcn.svg"
+                class="browse-arrowsgrowth1"
+              />
+              <span class="browse-text26"><span>Pasar Seloka</span></span>
+            </div>
+            <div class="browse-frame33830">
+              <img
+                alt="Arrowsgrowth1156"
+                src="public/external/arrowsgrowth1156-xny.svg"
+                class="browse-arrowsgrowth2"
+              />
+              <span class="browse-text28"><span>Pasar Gadis</span></span>
+            </div>
+          </div>
+          <span class="browse-text30"><span>Recent &amp; Popular</span></span>
+          <span class="browse-text32"><span>Top Profiles this week</span></span>
+          <span class="browse-text34"><span>Recommended For You</span></span>
+          <div class="browse-events-card">
+            <img
+              alt="image901158"
+              src="public/external/image901158-c8b-300h.png"
+              class="browse-image90"
+            />
+            <img
+              alt="Rectangle54891158"
+              src="public/external/rectangle54891158-sm3.svg"
+              class="browse-rectangle5489"
+            />
+            <span class="browse-text36"><span>Pasar Seloka Raya</span></span>
+            <div class="browse-location">
+              <span class="browse-text38">
+                <span>Paradigm Mall, Petaling Jaya</span>
+              </span>
+              <div class="browse-pin-location">
+                <img
+                  alt="mappin1158"
+                  src="public/external/mappin1158-iolf.svg"
+                  class="browse-mappin"
+                />
+              </div>
+            </div>
+            <span class="browse-text40">
+              <span>Treat yourself to an unforgettable day</span>
+              <br />
+              <span>of networking with your local vendors!</span>
+            </span>
+            <span class="browse-text44">
+              <span>
+                Date&nbsp; &nbsp; &nbsp; :&nbsp; &nbsp; &nbsp;16 Mar – 7 April,
+                2024
+              </span>
+              <br />
+              <span>
+                Time&nbsp; &nbsp; &nbsp; :&nbsp; &nbsp; &nbsp;10am – 10pm
+              </span>
+            </span>
+            <div class="browse-circle-users">
+              <div class="browse-group2">
+                <img
+                  alt="Oval1158"
+                  src="public/external/oval1158-2fzn-200h.png"
+                  class="browse-oval2"
+                />
+                <img
+                  alt="OvalCopy1158"
+                  src="public/external/ovalcopy1158-q5x7-200h.png"
+                  class="browse-oval-copy2"
+                />
+                <img
+                  alt="OvalCopy41158"
+                  src="public/external/ovalcopy41158-1yia-200h.png"
+                  class="browse-oval-copy42"
+                />
+              </div>
+              <div class="browse-group3">
+                <img
+                  alt="OvalCopy1158"
+                  src="public/external/ovalcopy1158-zsap-200h.png"
+                  class="browse-oval-copy3"
+                />
+                <img
+                  alt="OvalCopy41158"
+                  src="public/external/ovalcopy41158-qfzi-200h.png"
+                  class="browse-oval-copy43"
+                />
+              </div>
+              <span class="browse-text48"><span>+9k Liked</span></span>
+              <span class="browse-text50"><span>+200 Vendors</span></span>
+              <div class="browse-frame33832">
+                <span class="browse-text52"><span>Ad</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="browse-events-card1">
+            <img
+              alt="Rectangle54891158"
+              src="public/external/rectangle54891158-766r.svg"
+              class="browse-rectangle54891"
+            />
+            <span class="browse-text54">
+              <span>Pasar Gadis Setahun Bersama</span>
+            </span>
+            <span class="browse-text56">
+              <span>Treat yourself to an unforgettable day</span>
+              <br />
+              <span>of networking with your local vendors!</span>
+            </span>
+            <div class="browse-circle-users1">
+              <div class="browse-group4">
+                <img
+                  alt="Oval1158"
+                  src="public/external/oval1158-os2-200h.png"
+                  class="browse-oval3"
+                />
+                <img
+                  alt="OvalCopy1158"
+                  src="public/external/ovalcopy1158-uk55-200h.png"
+                  class="browse-oval-copy4"
+                />
+                <img
+                  alt="OvalCopy41158"
+                  src="public/external/ovalcopy41158-syht-200h.png"
+                  class="browse-oval-copy44"
+                />
+              </div>
+              <div class="browse-group5">
+                <img
+                  alt="OvalCopy1158"
+                  src="public/external/ovalcopy1158-yoz-200h.png"
+                  class="browse-oval-copy5"
+                />
+                <img
+                  alt="OvalCopy41158"
+                  src="public/external/ovalcopy41158-tbu-200h.png"
+                  class="browse-oval-copy45"
+                />
+              </div>
+              <span class="browse-text60"><span>+9k Liked</span></span>
+              <span class="browse-text62"><span>+200 Vendors</span></span>
+            </div>
+          </div>
+          <div class="browse-location1">
+            <span class="browse-text64">
+              <span>Central Market, Kuala Lumpur</span>
+            </span>
+            <div class="browse-pin-location1">
+              <img
+                alt="mappin1158"
+                src="public/external/mappin1158-p61.svg"
+                class="browse-mappin1"
+              />
+            </div>
+          </div>
+          <span class="browse-text66">
+            <span>
+              Date&nbsp; &nbsp; &nbsp; :&nbsp; &nbsp; &nbsp;5 – 7 April, 2024
+            </span>
+            <br />
+            <span>
+              Time&nbsp; &nbsp; &nbsp; :&nbsp; &nbsp; &nbsp;10am – 10pm
+            </span>
+          </span>
+          <div class="browse-frame33833">
+            <div class="browse-group18240">
+              <img
+                alt="filtercircle1159"
+                src="public/external/filtercircle1159-n2cx.svg"
+                class="browse-filtercircle"
+              />
+            </div>
+            <span class="browse-text70"><span>Filters</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

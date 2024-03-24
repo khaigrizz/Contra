@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Acme:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Acme:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Acme:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Acme:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Acme:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Acme:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Acme:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div class="home-home">
+          <div class="home-maskgroup">
+            <img
+              alt="Rectangle42011147"
+              src="public/external/rectangle42011147-ixah-300w.png"
+              class="home-rectangle4201"
+            />
+            <img
+              alt="image871147"
+              src="public/external/image871147-o5f-300w.png"
+              class="home-image87"
+            />
+          </div>
+          <div class="home-maskgroup1">
+            <img
+              alt="image871147"
+              src="public/external/image871147-cjnn-300h.png"
+              class="home-image871"
+            />
+          </div>
+          <img
+            alt="Rectangle54841143"
+            src="public/external/rectangle54841143-aai.svg"
+            class="home-rectangle5484"
+          />
+          <img
+            alt="Ellipse861143"
+            src="public/external/ellipse861143-l0sa-300h.png"
+            class="home-ellipse86"
+          />
+          <img
+            alt="MemojiBoys3151143"
+            src="public/external/memojiboys3151143-3xj-300w.png"
+            class="home-memoji-boys315"
+          />
+          <img
+            alt="Rectangle54851143"
+            src="public/external/rectangle54851143-p12t.svg"
+            class="home-rectangle5485"
+          />
+          <div class="home-frame33824">
+            <span class="home-text"><span>VENDOR</span></span>
+          </div>
+          <span class="home-text02"><span>LISA MAAHAD</span></span>
+          <span class="home-text04"><span>CROCHETER, FULL-TIME</span></span>
+          <img
+            alt="Rectangle54861143"
+            src="public/external/rectangle54861143-t6va.svg"
+            class="home-rectangle5486"
+          />
+          <img
+            alt="Ellipse871143"
+            src="public/external/ellipse871143-wd4-300h.png"
+            class="home-ellipse87"
+          />
+          <img
+            alt="Rectangle54871143"
+            src="public/external/rectangle54871143-ik.svg"
+            class="home-rectangle5487"
+          />
+          <div class="home-frame33825">
+            <span class="home-text06"><span>VENDOR</span></span>
+          </div>
+          <span class="home-text08"><span>RAGHU SIMON</span></span>
+          <img
+            alt="IMAGE58121143"
+            src="public/external/image58121143-hk3g-300w.png"
+            class="home-image5812"
+          />
+          <div class="home-group33759">
+            <div class="home-group">
+              <img
+                alt="Oval1143"
+                src="public/external/oval1143-x0qs-200h.png"
+                class="home-oval"
+              />
+              <img
+                alt="OvalCopy1143"
+                src="public/external/ovalcopy1143-5um-200h.png"
+                class="home-oval-copy"
+              />
+              <img
+                alt="OvalCopy41143"
+                src="public/external/ovalcopy41143-28qf-200h.png"
+              />
+            </div>
+            <span class="home-text10"><span>+110 CLIENTS</span></span>
+          </div>
+          <div class="home-group33760">
+            <div>
+              <img
+                alt="Oval1143"
+                src="public/external/oval1143-els-200h.png"
+                class="home-oval1"
+              />
+              <img
+                alt="OvalCopy1143"
+                src="public/external/ovalcopy1143-o1v-200h.png"
+                class="home-oval-copy1"
+              />
+              <img
+                alt="OvalCopy41143"
+                src="public/external/ovalcopy41143-a5b-200h.png"
+                class="home-oval-copy41"
+              />
+            </div>
+            <span class="home-text12"><span>+110 CLIENTS</span></span>
+          </div>
+          <div class="home-group33761">
+            <img alt="Vector11143" src="public/external/vector11143-u95.svg" />
+            <img alt="Vector51143" src="public/external/vector51143-5fk8.svg" />
+            <img alt="Vector41143" src="public/external/vector41143-c4h.svg" />
+            <img alt="Vector31143" src="public/external/vector31143-lj79.svg" />
+            <img alt="Vector21143" src="public/external/vector21143-gmpq.svg" />
+          </div>
+          <div class="home-group33762">
+            <img
+              alt="Vector11143"
+              src="public/external/vector11143-8aua.svg"
+              class="home-vector11"
+            />
+            <img
+              alt="Vector51143"
+              src="public/external/vector51143-p5ip.svg"
+              class="home-vector51"
+            />
+            <img
+              alt="Vector41143"
+              src="public/external/vector41143-hdw4.svg"
+              class="home-vector41"
+            />
+            <img
+              alt="Vector31143"
+              src="public/external/vector31143-lod5.svg"
+              class="home-vector31"
+            />
+            <img
+              alt="Vector21144"
+              src="public/external/vector21144-k88b.svg"
+              class="home-vector21"
+            />
+          </div>
+          <span class="home-text14"><span>PHOTOGRAPHER, FULL-TIME</span></span>
+          <div class="home-menu">
+            <div class="home-menu-items">
+              <div class="home-icons">
+                <div class="home-group1">
+                  <img
+                    alt="Ellipse1I114"
+                    src="public/external/ellipse1i114-cb1h-200h.png"
+                    class="home-ellipse1"
+                  />
+                  <img
+                    alt="UserInterfaceHouseI114"
+                    src="public/external/userinterfacehousei114-4jue.svg"
+                    class="home-user-interface-house"
+                  />
+                </div>
+              </div>
+              <span class="home-text16"><span>Home</span></span>
+            </div>
+            <div class="home-menu-items1">
+              <a href="browse.html" class="home-navlink">
+                <div class="home-icons1">
+                  <div class="home-group11">
+                    <img
+                      alt="Ellipse1I114"
+                      src="public/external/ellipse1i114-62ac.svg"
+                      class="home-ellipse11"
+                    />
+                    <img
+                      alt="UserInterfaceMagnifierI114"
+                      src="public/external/userinterfacemagnifieri114-mpe.svg"
+                      class="home-user-interface-magnifier"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="home-menu-items2">
+              <a href="messages.html" class="home-navlink1">
+                <div class="home-icons2">
+                  <div class="home-group12">
+                    <img
+                      alt="Ellipse1I114"
+                      src="public/external/ellipse1i114-fvyd-200h.png"
+                      class="home-ellipse12"
+                    />
+                    <img
+                      alt="UserInterfaceBellI114"
+                      src="public/external/userinterfacebelli114-0oz.svg"
+                      class="home-user-interface-bell"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="home-menu-items3">
+              <a href="profile.html" class="home-navlink2">
+                <div class="home-icons3">
+                  <div class="home-group13">
+                    <img
+                      alt="Ellipse1I114"
+                      src="public/external/ellipse1i114-en8-200h.png"
+                      class="home-ellipse13"
+                    />
+                    <img
+                      alt="UsersaccountI114"
+                      src="public/external/usersaccounti114-gtes.svg"
+                      class="home-usersaccount"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="home-current-location">
+            <span class="home-text18"><span>Current location</span></span>
+            <div class="home-location">
+              <div class="home-vuesaxboldlocation">
+                <div class="home-vuesaxboldlocation01">
+                  <div class="home-vuesaxboldlocation02">
+                    <img
+                      alt="VectorI114"
+                      src="public/external/vectori114-2l5x.svg"
+                      class="home-vector"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="home-text20">
+                <span class="home-text21"><span>Ampang, Selangor</span></span>
+                <div class="home-vuesaxlineararrowdown">
+                  <div class="home-vuesaxlineararrowdown1">
+                    <div class="home-vuesaxlineararrowdown2">
+                      <div class="home-arrowdown">
+                        <img
+                          alt="VectorI114"
+                          src="public/external/vectori114-y8fw.svg"
+                          class="home-vector1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="home-text23"><span>Hello Dean!</span></span>
+          <div class="home-pesta-wo-wnita">
+            <div class="home-maskgroup2">
+              <img
+                alt="image861146"
+                src="public/external/image861146-y7go-300w.png"
+                class="home-image86"
+              />
+            </div>
+            <img
+              alt="Rectangle54881146"
+              src="public/external/rectangle54881146-y99i.svg"
+              class="home-rectangle5488"
+            />
+            <div class="home-vuesaxboldlocation03">
+              <div class="home-vuesaxboldlocation04">
+                <div class="home-vuesaxboldlocation05">
+                  <img
+                    alt="VectorI114"
+                    src="public/external/vectori114-k24d.svg"
+                    class="home-vector2"
+                  />
+                </div>
+              </div>
+            </div>
+            <span class="home-text25">
+              <span>Central Market, Kuala Lumpur</span>
+            </span>
+            <span class="home-text27"><span>4.9</span></span>
+            <span class="home-text29"><span>Pesta WoWnita</span></span>
+            <img
+              alt="Vector21146"
+              src="public/external/vector21146-cp1u.svg"
+              class="home-vector22"
+            />
+            <div class="home-group18117">
+              <div class="home-group2">
+                <img
+                  alt="Oval1146"
+                  src="public/external/oval1146-wz6p-200w.png"
+                  class="home-oval2"
+                />
+                <img
+                  alt="OvalCopy1146"
+                  src="public/external/ovalcopy1146-bz9s-200w.png"
+                  class="home-oval-copy2"
+                />
+                <img
+                  alt="OvalCopy41146"
+                  src="public/external/ovalcopy41146-6k1-200w.png"
+                  class="home-oval-copy42"
+                />
+              </div>
+              <span class="home-text31"><span>+2k Liked</span></span>
+            </div>
+          </div>
+          <div class="home-pesta-wo-wnita1">
+            <img
+              alt="Rectangle54881147"
+              src="public/external/rectangle54881147-6cm4.svg"
+              class="home-rectangle54881"
+            />
+            <div class="home-vuesaxboldlocation06">
+              <div class="home-vuesaxboldlocation07">
+                <div class="home-vuesaxboldlocation08">
+                  <img
+                    alt="VectorI114"
+                    src="public/external/vectori114-q8ie.svg"
+                    class="home-vector3"
+                  />
+                </div>
+              </div>
+            </div>
+            <span class="home-text33">
+              <span>Central Market, Kuala Lumpur</span>
+            </span>
+            <span class="home-text35"><span>4.9</span></span>
+            <span class="home-text37"><span>Warna Warni Ramadhan</span></span>
+            <img
+              alt="Vector21147"
+              src="public/external/vector21147-ni37.svg"
+              class="home-vector23"
+            />
+            <div class="home-group181171">
+              <div class="home-group3">
+                <img
+                  alt="Oval1147"
+                  src="public/external/oval1147-crka-200w.png"
+                  class="home-oval3"
+                />
+                <img
+                  alt="OvalCopy1147"
+                  src="public/external/ovalcopy1147-kis-200w.png"
+                  class="home-oval-copy3"
+                />
+                <img
+                  alt="OvalCopy41147"
+                  src="public/external/ovalcopy41147-6cpj-200w.png"
+                  class="home-oval-copy43"
+                />
+              </div>
+              <span class="home-text39"><span>+2k Liked</span></span>
+            </div>
+          </div>
+          <div class="home-pesta-wo-wnita2">
+            <img
+              alt="Rectangle54881147"
+              src="public/external/rectangle54881147-oui4.svg"
+              class="home-rectangle54882"
+            />
+            <div class="home-vuesaxboldlocation09">
+              <div class="home-vuesaxboldlocation10">
+                <div class="home-vuesaxboldlocation11">
+                  <img
+                    alt="VectorI114"
+                    src="public/external/vectori114-yo2a.svg"
+                    class="home-vector4"
+                  />
+                </div>
+              </div>
+            </div>
+            <span class="home-text41">
+              <span>Central Market, Kuala Lumpur</span>
+            </span>
+            <span class="home-text43"><span>4.9</span></span>
+            <span class="home-text45"><span>Pasar Corak Hati Raya</span></span>
+            <img
+              alt="Vector21147"
+              src="public/external/vector21147-9old.svg"
+              class="home-vector24"
+            />
+            <div class="home-group181172">
+              <div class="home-group4">
+                <img
+                  alt="Oval1147"
+                  src="public/external/oval1147-zmfv-200w.png"
+                  class="home-oval4"
+                />
+                <img
+                  alt="OvalCopy1147"
+                  src="public/external/ovalcopy1147-rzln-200w.png"
+                  class="home-oval-copy4"
+                />
+                <img
+                  alt="OvalCopy41147"
+                  src="public/external/ovalcopy41147-r2s8-200w.png"
+                  class="home-oval-copy44"
+                />
+              </div>
+              <span class="home-text47"><span>+2k Liked</span></span>
+            </div>
+          </div>
+          <div class="home-jom-makan-fest">
+            <div class="home-maskgroup3">
+              <img
+                alt="image861147"
+                src="public/external/image861147-emkd-300w.png"
+                class="home-image861"
+              />
+            </div>
+            <div class="home-pesta-wo-wnita3">
+              <img
+                alt="Rectangle54881146"
+                src="public/external/rectangle54881146-qd08.svg"
+                class="home-rectangle54883"
+              />
+              <div class="home-vuesaxboldlocation12">
+                <div class="home-vuesaxboldlocation13">
+                  <div class="home-vuesaxboldlocation14">
+                    <img
+                      alt="VectorI114"
+                      src="public/external/vectori114-aumg.svg"
+                      class="home-vector5"
+                    />
+                  </div>
+                </div>
+              </div>
+              <span class="home-text49">
+                <span>Central Market, Kuala Lumpur</span>
+              </span>
+              <span class="home-text51"><span>4.9</span></span>
+              <span class="home-text53"><span>Jom Makan Fest</span></span>
+              <img
+                alt="Vector21146"
+                src="public/external/vector21146-mnro.svg"
+                class="home-vector25"
+              />
+              <div class="home-group181173">
+                <div class="home-group5">
+                  <img
+                    alt="Oval1146"
+                    src="public/external/oval1146-oa79-200w.png"
+                    class="home-oval5"
+                  />
+                  <img
+                    alt="OvalCopy1146"
+                    src="public/external/ovalcopy1146-akjh-200w.png"
+                    class="home-oval-copy5"
+                  />
+                  <img
+                    alt="OvalCopy41146"
+                    src="public/external/ovalcopy41146-4m6p-200w.png"
+                    class="home-oval-copy45"
+                  />
+                </div>
+                <span class="home-text55"><span>+2k Liked</span></span>
+              </div>
+            </div>
+          </div>
+          <span class="home-text57"><span>Local Events Around You</span></span>
+          <span class="home-text59">
+            <span>Rising In Local Community</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
